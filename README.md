@@ -1,2 +1,0 @@
-# android-utilities
-androi utilities

@@ -1,4 +1,4 @@
-package apv.congnt24.utilities;
+package apv.congnt24.data;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -9,9 +9,6 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-/**
- * Created by cong on 8/29/2015.
- */
 public class Decompress {
 
     public static void unzip(File zipFile, File targetDirectory) throws IOException {
@@ -36,11 +33,6 @@ public class Decompress {
                 } finally {
                     fout.close();
                 }
-            /* if time should be restored as well
-            long time = ze.getTime();
-            if (time > 0)
-                file.setLastModified(time);
-            */
             }
             //Delete file zip after decompress
             zipFile.delete();

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: "com.github.dcendents.android-maven"
+apply plugin: "com.jfrog.bintray"
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'android-utilities'
+
+    publishedGroupId = 'apv.congnt24.utilities'
+    libraryName = 'Android-Utilities'
+    artifact = 'android-utilities'
+
+    libraryDescription = 'Just a android lib'
+
+    siteUrl = 'https://github.com/congnt24/android-utilities'
+    gitUrl = 'https://github.com/congnt24/android-utilities.git'
+
+    libraryVersion = '0.0.2'
+
+    developerId = 'congnt24'
+    developerName = 'Nguyen Trung Cong'
+    developerEmail = 'congnt24@gmail.com'
+
+    licenseName = 'The MIT License (MIT)'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

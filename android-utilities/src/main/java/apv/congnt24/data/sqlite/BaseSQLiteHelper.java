@@ -1,4 +1,4 @@
-package database.sqlite;
+package apv.congnt24.data.sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,9 +12,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
-/**
- * Created by cong on 10/31/2015.
- */
 public abstract class BaseSQLiteHelper extends SQLiteOpenHelper {
     public static String DB_NAME = "data.db";
     Context context;
@@ -26,7 +23,8 @@ public abstract class BaseSQLiteHelper extends SQLiteOpenHelper {
     public abstract Cursor queryAll(String tableName);
     public abstract Cursor queryRandom(String tableName, int amount);
     public abstract void insert(String tableName, ContentValues values);
-    public abstract List getLikeWord(String tableName, String word, int limit);
+    abstract List getLikeWord(String tableName, String where, String word, int limit);
+
     public abstract Cursor getOneRow(String tableName,String column, String arg);
 
     public void copyDataBase(String dbname){

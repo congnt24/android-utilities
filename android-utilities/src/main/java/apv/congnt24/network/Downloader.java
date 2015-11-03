@@ -1,4 +1,4 @@
-package network.downloader;
+package apv.congnt24.network;
 
 import android.content.Context;
 import android.net.Uri;
@@ -12,11 +12,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/**
- * @author Created by cong on 8/29/2015.
- * The file was downloaded will be saved in "files" folder
- */
 public class Downloader {
+
     public static String download(Context mcontext, String urls){
         String fileName= Uri.parse(urls).getLastPathSegment();
         if (new File(mcontext.getFilesDir()+"/"+fileName).exists()){
