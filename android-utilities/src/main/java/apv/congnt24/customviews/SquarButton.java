@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.Button;
 
+import apv.congnt24.android_utilities.R;
+
 /**
  * Created by congn_000 on 10/29/2015.
  */

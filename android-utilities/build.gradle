@@ -6,7 +6,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'android-utilities'
 
-    publishedGroupId = 'apv.congnt24.utilities'
+    publishedGroupId = 'apv.congnt24'
     libraryName = 'Android-Utilities'
     artifact = 'android-utilities'
 
@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/congnt24/android-utilities'
     gitUrl = 'https://github.com/congnt24/android-utilities.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.9'
 
     developerId = 'congnt24'
     developerName = 'Nguyen Trung Cong'

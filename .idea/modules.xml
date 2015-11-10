@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Utilities.iml" filepath="$PROJECT_DIR$/Utilities.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-utilities/android-utilities.iml" filepath="$PROJECT_DIR$/android-utilities/android-utilities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-utilities/android-utilities.iml" filepath="$PROJECT_DIR$/android-utilities/android-utilities.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

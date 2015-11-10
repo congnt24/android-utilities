@@ -5,6 +5,9 @@
         <attr name="ratioHeigh" format="integer" />
     </declare-styleable>
 
+    <declare-styleable name="EqualizerView">
+        <attr name="count" format="integer" />
+    </declare-styleable>
 
     <declare-styleable name="AnswerView">
         <attr name="aw_ShowTextWhenActive" format="boolean" />
@@ -13,5 +16,12 @@
         <attr name="aw_Number" format="integer" />
         <attr name="aw_changeOnClick" format="boolean" />
         <attr name="aw_canCancelAnswer" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FlashCardView">
+        <attr name="frontColor" format="color" />
+        <attr name="backColor" format="color" />
+        <attr name="frontTextColor" format="color" />
+        <attr name="backTextColor" format="color" />
     </declare-styleable>
 </resources>

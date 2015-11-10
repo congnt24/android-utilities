@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="9">
+        <View
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <apv.congnt24.utilities.VerticalSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/eq_progress"
+            android:thumb="@drawable/eq_thumb"
+            android:thumbOffset="5dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:text="BASS"/>
+</LinearLayout>

@@ -23,9 +23,8 @@ public abstract class BaseSQLiteHelper extends SQLiteOpenHelper {
     public abstract Cursor queryAll(String tableName);
     public abstract Cursor queryRandom(String tableName, int amount);
     public abstract void insert(String tableName, ContentValues values);
-    abstract List getLikeWord(String tableName, String where, String word, int limit);
-
     public abstract Cursor getOneRow(String tableName,String column, String arg);
+    public abstract SQLiteDatabase getSQLiteDatabase();
 
     public void copyDataBase(String dbname){
         InputStream myInput = null;

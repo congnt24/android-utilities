@@ -2,9 +2,6 @@ package apv.congnt24.data;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.os.Debug;
-import android.util.Log;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -47,15 +44,16 @@ public class CreateFileFromAssets {
     }
     public CreateFileFromAssets CreateOneFile(String fileName){
         String path = context.getFilesDir().getPath()+"/"+fileName;
+        File file = new File(path);
+        if (file.exists()){
+            return this;
+        }
         InputStream inputStream = null;
         OutputStream outputStream = null;
         AssetManager assetManager = context.getAssets();
         try {
             inputStream = assetManager.open(fileName);
-            File file = new File(path);
-            if (!file.exists()){
-                file.createNewFile();
-            }
+            file.createNewFile();
             int read = 0;
             outputStream = new FileOutputStream(file);
             byte[] offer = new byte[1024];
